@@ -1,2 +1,2 @@
 # PythonCrawler
-pythone爬虫
+python爬虫
