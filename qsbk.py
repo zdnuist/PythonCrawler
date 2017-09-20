@@ -25,7 +25,7 @@ class QSBK:
         _prefix = time.strftime('%Y-%m-%d',time.localtime(time.time()))
         filePath = 'qsbk_'+_prefix
         f = open(filePath,'w+',encoding = 'utf-8')
-        print(sys.getdefaultencoding())
+        # print(sys.getdefaultencoding())
         index = 0
         for item in items:
             # print('***********************************************')
