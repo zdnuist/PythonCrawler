@@ -42,8 +42,6 @@ class QSBK:
         f.close()
 
 
-        
-
-
-qsbk = QSBK()
-qsbk.getPageItems(2)
+if __name__ == "__main__":
+    qsbk = QSBK()
+    qsbk.getPageItems(3)    
