@@ -12,7 +12,7 @@ if len(sys.argv) > 1:
         print(fileName)
 
         from_addr = "dicking02@126.com"
-        password = "xx"
+        password = "cloud311"
         to_addr = "zhangdong123@loocha.com"
         smtp_server = "smtp.126.com"
 
