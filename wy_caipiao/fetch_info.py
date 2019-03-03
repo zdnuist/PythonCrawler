@@ -21,12 +21,13 @@ class FetchInfo:
 
 
         _prefix = time.strftime('%Y-%m-%d',time.localtime(time.time()))
-        filePath = 'caipiao_'+_prefix
+        filePath = 'zcw_'+_prefix
         f = open(filePath,'w+',encoding = 'utf-8')
 
         for li in linkList.items():
             _href = li.attr('href')
             _html = li.html()
+<<<<<<< HEAD
             isIngore = False
 
             for item in self.ignoreList:
@@ -38,11 +39,19 @@ class FetchInfo:
                     print(_href +"|" +_html)
                     f.write(_href +"|" +_html)
                     f.write("\n")
+=======
+            if _href and _html:
+               print(_href +"|" +_html)
+               f.write(_href )
+               f.write("\n")
+>>>>>>> fix url
 
         f.flush()
         f.close()
 
 if __name__=='__main__':
     fetchInfo = FetchInfo()
-    content = fetchInfo.getPageInfo('http://cai.163.com/')
+    url = 'http://www.zhcw.com/xinwen/'
+    # url = 'http://cai.163.com/'
+    content = fetchInfo.getPageInfo(url)
     fetchInfo.getAllLinkInfo(content)
